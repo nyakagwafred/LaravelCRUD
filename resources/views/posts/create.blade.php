@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Create Post</h1>
+    <div class="container">
+        <h1>Create Post</h1>
 
     {!! Form::open(['action' => 'PostsController@store','method' => 'POST']) !!}
     <div class="form-group">
@@ -15,5 +16,7 @@
     {{Form::Submit('Submit',['class' =>'btn btn-primary'])}}
     {!! Form::close() !!}
     
+    </div>
+
     
 @endsection

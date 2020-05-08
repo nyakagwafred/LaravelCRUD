@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Posts</h1>
+    <div class="container">
+        <h1>Recent Posts</h1>
     @if (count($posts) > 0)
         @foreach ($posts as $post)
             <div style="margin-top:5px" class="card card-body bg-light">
@@ -13,5 +14,6 @@
     @else
     <p>No posts found</p> 
     @endif
+    </div>
     
 @endsection
